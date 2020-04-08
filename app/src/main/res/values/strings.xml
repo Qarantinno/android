@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">qarantinno</string>
+
+    <string name="preference_name">My name</string>
+    <string name="preference_key">My key</string>
+
+    <string name="slide1_title">For what</string>
+    <string name="slide1_desc">For places analysis</string>
+
+    <string name="slide2_title">For whom</string>
+    <string name="slide2_desc">For everybody</string>
+
+    <string name="slide3_title">How is it cost</string>
+    <string name="slide3_desc">Free for you</string>
+
 </resources>
