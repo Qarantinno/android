@@ -6,6 +6,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+
     </style>
+    <style name="floating_action_button">
+        <item name="android:layout_margin">30dp</item>
+    </style>
+
 
 </resources>

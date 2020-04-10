@@ -9,15 +9,15 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"/>
+        android:layout_height="fill_parent" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:alpha=".5"
         android:layout_above="@+id/dots"
-        android:background="@android:color/white"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="15dp"
+        android:alpha=".5"
+        android:background="@android:color/white" />
 
     <LinearLayout
         android:id="@+id/dots"
@@ -26,29 +26,31 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal" />
+
     <Button
         android:id="@+id/skipButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/allura"
-        android:textColor="@color/textColorBlack"
-        android:layout_marginBottom="8dp"
-        android:text="Skip"
-        android:textSize="16sp"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:background="@null"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:fontFamily="@font/allura"
+        android:text="Skip"
+        android:textColor="@color/textColorBlack"
+        android:textSize="16sp" />
+
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/allura"
-        android:textColor="@color/textColorBlack"
-        android:layout_marginBottom="8dp"
-        android:text="Next"
-        android:textSize="16sp"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:background="@null"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:fontFamily="@font/allura"
+        android:text="Next"
+        android:textColor="@color/textColorBlack"
+        android:textSize="16sp" />
 </RelativeLayout>
