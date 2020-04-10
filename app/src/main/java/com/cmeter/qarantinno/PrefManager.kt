@@ -7,31 +7,31 @@ import androidx.appcompat.app.AppCompatActivity
 
 class PrefManager {
 
-    lateinit var cont: Context
+    lateinit var context: Context
 
     lateinit var pref: SharedPreferences
 
     constructor(context: Context) {
-        this.cont = context
+        this.context = context
         getSharedPreferences()
     }
 
     private fun getSharedPreferences() {
-        pref = cont.getSharedPreferences(
-            cont.getString(R.string.preference_name),
+        pref = context.getSharedPreferences(
+            context.getString(R.string.preference_name),
             Context.MODE_PRIVATE
         )
     }
 
     fun writeSharedPrefrences() {
        var editor : SharedPreferences.Editor = pref.edit()
-        editor.putString(cont.getString(R.string.preference_key), "NEXT")
+        editor.putString(context.getString(R.string.preference_key), "NEXT")
         editor.commit()
     }
 
     fun checkPreference() : Boolean{
         var status = false
-        if(pref.getString(cont.getString(R.string.preference_key), "null").equals("null")){
+        if(pref.getString(context.getString(R.string.preference_key), "null").equals("null")){
             status = false
         }
         else {
@@ -42,8 +42,8 @@ class PrefManager {
 
     fun clearPreference(){
         pref.edit().clear().commit()
-        cont.startActivity(Intent(cont, MainActivity::class.java))
-        (cont as AppCompatActivity).finish()
+        context.startActivity(Intent(context, MainActivity::class.java))
+        (context as AppCompatActivity).finish()
     }
 
 }

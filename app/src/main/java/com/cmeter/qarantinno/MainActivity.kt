@@ -18,23 +18,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var mPager : ViewPager
 
     var layouts : IntArray = intArrayOf(R.layout.first_slide, R.layout.second_slide, R.layout.third_slide)
-
     lateinit var dotsLayout : LinearLayout
-
     lateinit var dots : Array<ImageView>
-
     lateinit var mAdapter: PageAdapter
-
     lateinit var nextButton : Button
-
     lateinit var skipButton : Button
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if(PrefManager(this).checkPreference()){
-            loadHome()
-        }
+//        if(PrefManager(this).checkPreference()){
+//            loadHome()
+//        }
         if(Build.VERSION.SDK_INT >= 19){
             window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         }
